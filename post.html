@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Post your Blog</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class=" Post-container">
+        <h1>Post your Blog</h1>
+        <form id="post-form" action="/submit-post" method="POST">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br><br> 
+            <imput type="date" id="date" name="date" required><br><br>
+
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content" rows="10" cols="30" required></textarea><br><br>
+            <div id="edit-form" style="display: none;">
+                <label for="edit-content">Edit Content:</label><br>
+                <textarea id="edit-content" name="edit-content" rows="10" cols="30"></textarea><br><br>
+                <button type="button" id="save-button">Save</button>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="delete" id="delete-button">Delete</button>
+        </form>
+        
+        
+</body>
+</html>
+
